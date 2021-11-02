@@ -1,0 +1,22 @@
+country_arr
+
+//country selection function
+select = document.getElementById(s_country);
+
+document.getElementById('s_country').addEventListener("Change", cselect);
+
+function cselect () {
+	for(let i = 0; i < country_arr.length; i++){
+	let otpn = country_arr[i];
+	let option = document.createElement("option");
+	option.textcontent = optn;
+	option.value = optn;
+	select.appendChild(option);
+	}
+};
+
+<!--HTML-->
+<select id = s_country></select>
+
+iso_arr
+state_arr
