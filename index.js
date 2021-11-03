@@ -478,9 +478,6 @@ const iso_arr = new Array(
   "sz"
 );
 
-
-
-
 //country selection function
 let testbtn = document.getElementById("test");
 
@@ -507,3 +504,5 @@ async function fetchResults(e) {
     }
   }   
 }; 
+
+//BootStrap Cards

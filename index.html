@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <!--BootStrap HTML-->
     <link
       rel="stylesheet"
@@ -12,19 +13,24 @@
       crossorigin="anonymous"
     />
     <!--Mine-->
-    <link rel="stylesheet" href="styles.css" type="text/CSS" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <!--My Font Awesome Kit-->
     <script
       src="https://kit.fontawesome.com/d8bb37985d.js"
       crossorigin="anonymous"
     ></script>
+    
     <title>API02 - Calendar</title>
   </head>
   <body>
-    <div class="container-fluid">
-      <div class="row">row to contain nav, 100%</div>
+    
+      <!--NAV/Header-->
+      <header class="header">Hello I'm a Header!</header>
+      <!--Main Body-->
+     <div class="container-fluid">
       <div class="row">
-        <div class="col-2">
+        <!--Search Form w/in Main Body-->
+        <div class="col-3" id="searchForm">
           <!--Search Form-->
             <form name = "search" onsubmit=fetchResults(e);>
                 <select id = "select">
@@ -39,32 +45,22 @@
                 </p>
             </form>
           </div>
+          <!--Returned Information-->
         <div class="col">
           container for nested information
-          <div class="row">
-            <div class="col-sm">Nested Left - row 1</div>
-            <div class="col-sm">Nested Right -row 1</div>
-          </div>
-          <div class="row">
-            <div class="col-sm">Nested Left - row 2</div>
-            <div class="col-sm">Nested Right -row 2</div>
-          </div>
-          <div class="row">
-            <div class="col-sm">Nested Left - row 3</div>
-            <div class="col-sm">Nested Right -row 3</div>
           </div>
         </div>
-        <div class="col-2">sidebar right</div>
       </div>
-      <div class="row">Row to contain footer</div>
     </div>
+    </div>
+    <!--Footer-->
+   <footer class="footer">Hi I'm a footer!</footer>
   </body>
   <!--BootStrap-->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-    crossorigin="anonymous"
-  ></script>
+    crossorigin="anonymous"></script>
   <!--My JS-->
   <script src="index.js"></script>
 </html>

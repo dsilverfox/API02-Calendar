@@ -1,1 +1,17 @@
+body {
+    overflow-x: hidden;
+    background-color: midnightblue;
+    color: silver;
+}
+.header {
+    background-color:Gray;
+}
 
+#searchForm{
+    /* position: fixed; */
+    border: 2px solid silver;
+}
+
+.footer{
+    background-color:gray;
+}
