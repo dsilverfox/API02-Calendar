@@ -498,6 +498,7 @@ async function fetchResults(e) {
           let json = await response.json();
           console.log(url);
           console.log(json);
+          console.log(response.holidays[0].name)
     }
   }   
 }; 
