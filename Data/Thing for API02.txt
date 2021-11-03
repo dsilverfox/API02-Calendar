@@ -1,0 +1,88 @@
+{
+    "meta": {
+        "code": 200
+    },
+    "response": {
+        "holidays": [
+            {
+                "name": "Name of holiday goes here",
+                "description": "Description of holiday goes here",
+                "date": {
+                    "iso": "2018-12-31",
+                    "datetime": {
+                        "year": 2018,
+                        "month": 12,
+                        "day": 31
+                    }
+                },
+                "type": [
+                    "Type of Observance goes here"
+                ]
+            }
+        ]
+    }
+}
+
+json.response.holidays[x]
+
+	.name
+	.description
+	.date
+	.type
+
+
+const getRandomNumber = (min, max) => {
+  return Math.floor(Math.random() * (max - min) + min);
+};
+
+let displayData = (json) => {
+  let x = getRandomNumber(0, json.length - 1);
+//data display stuff goes here.
+//BUILD THE CARDS!
+
+//APPEND THE DATA
+<section>.appendChild( name || description || date || type);
+
+}
+
+
+//BootStrap Cards 
+let row = document.querySelector('.row');
+console.log(row);
+
+
+//Notes
+for(let i=0;  i < showsObj.shows.length; i++) {
+    let card = document.createElement('div');
+    card.className = 'card text-white bg-dark mb-3';
+    card.style = 'width: 18rem; margin: 1em; height: 300px; padding: .3em; overflow: auto;';
+
+    let img = document.createElement('img');
+    img.className = 'card-img-top'
+    img.src = showsObj.shows[i].img_src;
+
+    let cardTitle = document.createElement('h5');
+    cardTitle.className = 'card-title';
+    cardTitle.innerText = showsObj.shows[i].name;
+
+    let cardText = document.createElement('p');
+    cardText.className = 'card-text';
+    cardText.innerText = showsObj.shows[i].desc;
+
+    let cardBody = document.createElement('div');
+    cardBody.className = 'card-body';
+    
+    cardBody.appendChild(cardTitle);
+    cardBody.appendChild(cardText);
+    card.appendChild(img);
+    card.appendChild(cardBody);
+    row.appendChild(card);
+};
+
+
+//Pulling info from objects.
+
+  let color = document.createElement("p");
+  color.className = "color";
+  color.innerText = `Favorite Color: ${json[x].color}`;
+  color.style = "font-family: Montserrat; color: white;";
