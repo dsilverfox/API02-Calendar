@@ -478,9 +478,6 @@ const iso_arr = new Array(
   "sz"
 );
 
-//country selection function
-let testbtn = document.getElementById("test");
-
  for(let i = 0; i < country_arr.length; i++)
       {let option = document.createElement("option")
       option.innerText = country_arr[i];
@@ -505,4 +502,43 @@ async function fetchResults(e) {
   }   
 }; 
 
-//BootStrap Cards
+// //BootStrap Cards 
+// let row = document.querySelector('.row');
+// console.log(row);
+
+
+// //Notes
+// for(let i=0;  i < showsObj.shows.length; i++) {
+//     let card = document.createElement('div');
+//     card.className = 'card text-white bg-dark mb-3';
+//     card.style = 'width: 18rem; margin: 1em; height: 300px; padding: .3em; overflow: auto;';
+
+//     let img = document.createElement('img');
+//     img.className = 'card-img-top'
+//     img.src = showsObj.shows[i].img_src;
+
+//     let cardTitle = document.createElement('h5');
+//     cardTitle.className = 'card-title';
+//     cardTitle.innerText = showsObj.shows[i].name;
+
+//     let cardText = document.createElement('p');
+//     cardText.className = 'card-text';
+//     cardText.innerText = showsObj.shows[i].desc;
+
+//     let cardBody = document.createElement('div');
+//     cardBody.className = 'card-body';
+    
+//     cardBody.appendChild(cardTitle);
+//     cardBody.appendChild(cardText);
+//     card.appendChild(img);
+//     card.appendChild(cardBody);
+//     row.appendChild(card);
+// };
+
+
+// //Pulling info from objects.
+
+//   let color = document.createElement("p");
+//   color.className = "color";
+//   color.innerText = `Favorite Color: ${json[x].color}`;
+//   color.style = "font-family: Montserrat; color: white;";

@@ -1,17 +1,25 @@
 body {
     overflow-x: hidden;
-    background-color: midnightblue;
-    color: silver;
+    background-color: #9b6b4a;
+    color: #0d0709;
 }
+
 .header {
-    background-color:Gray;
+    height: 4rem;
+    color: #0d0709;
 }
 
-#searchForm{
+.border{
+    height: 0.5rem;
+    background-image: url(./assets/HeaderBar.jpg);
+}
+
+#searchForm {
     /* position: fixed; */
-    border: 2px solid silver;
+    border: 2px solid #00476a;
 }
 
-.footer{
-    background-color:gray;
+.footer {
+    height: 0.33rem;
+    background-image: url(./assets/HeaderBar.jpg);
 }
