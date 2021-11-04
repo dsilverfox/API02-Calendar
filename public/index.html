@@ -19,13 +19,17 @@
       src="https://kit.fontawesome.com/d8bb37985d.js"
       crossorigin="anonymous"
     ></script>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Mukta:wght@200&display=swap" rel="stylesheet">
     
     <title>API02 - Calendar</title>
   </head>
   <body>
     
       <!--NAV/Header-->
-      <header class="header"></header>
+      <header class="header"><p>Happy Holidays</p></header>
       <div class="border"></div>
       <!--Main Body-->
      <div class="container-fluid">
@@ -38,7 +42,7 @@
                   <option>--Select a Country -- </option> 
                 </select>
                 <p>
-                    <label for="year">Enter a SINGLE year (YYYY) Between 2000 and 2043:</label>
+                    <label for="year">Enter a SINGLE year (YYYY) before 2043:</label>
                     <input type ="text" id = "year" class = "year" required>
                 </p>
                 <p>
@@ -49,8 +53,11 @@
           </div>
           <!--Returned Information-->
         <div class="col">
-        
-          </div>
+          <ul class="info">  Information about the website.
+          <li>All dates are in ISO format(YYYY/MM/DD)</li>
+          <li>Clicking Sumbit will continue to provide more holidays with the year and country chosen.</li>
+          </ul>
+
         </div>
       </div>
     </div>

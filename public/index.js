@@ -510,7 +510,7 @@ async function fetchResults(e) {
 
 //Data Display
 let row = document.querySelector(".row");
-console.log(row);
+
 
 let displayData = (json) => {
   let x = getRandomNumber(0, json.response.holidays.length - 1);
@@ -521,24 +521,28 @@ let displayData = (json) => {
 
   let img = document.createElement('img');
   img.className = 'card-img-top'
-  img.src = "./assets/honey-yanibel-minaya-cruz-6gSyEKq4Pvg-unsplash - Copy.jpg";
+  img.src = "./assets/HeaderBar.jpg";
   
   
   let cardTitle = document.createElement('h1');
   cardTitle.className = "title";
   cardTitle.innerText = json.response.holidays[x].name;
+  cardTitle.style = "font-family: 'Eagle Lake', cursive;";
   
   let cardDate = document.createElement('h5');
   cardDate.className ="date"
   cardDate.innerText = json.response.holidays[x].date.iso;
+  cardDate.style = "font-family: 'Mukta', sans-serif;"
 
   let cardDesc = document.createElement('p');
   cardDesc.className = "desc"
   cardDesc.innerText = json.response.holidays[x].description;
+  cardDesc.style = "font-family: 'Mukta', sans-serif;"
 
   let cardType = document.createElement('p');
   cardType.className = "type"
   cardType.innerText = json.response.holidays[x].type;
+  cardType.style = "font-family: 'Mukta', sans-serif;"
 
   let cardBody = document.createElement('div');
   cardBody.className = 'card-body'

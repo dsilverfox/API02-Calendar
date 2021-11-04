@@ -1,12 +1,16 @@
 body {
     overflow-x: hidden;
-    background-color: #9b6b4a;
-    color: #0d0709;
+    background-color: #0d0709;
+    color: silver;
 }
 
 .header {
     height: 4rem;
-    color: #0d0709;
+    color: silver;
+    font-family: 'Eagle Lake', cursive;
+    font-size: 3rem;
+    font-weight: bolder;
+    margin-left: 22rem;
 }
 
 .border{
@@ -17,9 +21,27 @@ body {
 #searchForm {
     /* position: fixed; */
     border: 2px solid #00476a;
+    font-family: 'Mukta', sans-serif;
 }
 
 .footer {
     height: 0.33rem;
     background-image: url(./assets/HeaderBar.jpg);
+}
+
+.resultCard {
+    height: auto;
+    width: 26rem;
+    border: 2px solid #00476a;
+}
+
+.card-img-top {
+    height: 10rem;
+    width: 100%;
+}
+
+.info {
+    height: auto;
+    width: 15rem;
+    font-family: 'Mukta', sans-serif;
 }
