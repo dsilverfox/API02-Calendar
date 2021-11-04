@@ -544,10 +544,10 @@ let displayData = (json) => {
   let cardBody = document.createElement('div');
   cardBody.className = 'card-body'
 
-      cardBody.appendChild(title);
-      cardBody.appendChild(text);
-      cardBody.appendChild(date);
-      cardBody.appendChild(desc);
+      cardBody.appendChild(cardTitle);
+      cardBody.appendChild(cardDate);
+      cardBody.appendChild(cardDesc);
+      cardBody.appendChild(cardType);
       card.appendChild(img);
       card.appendChild(cardBody);
       row.appendChild(card);
