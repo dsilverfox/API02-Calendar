@@ -528,10 +528,9 @@ let displayData = (json) => {
   cardTitle.className = "title";
   cardTitle.innerText = json.response.holidays[x].name;
   
-
   let cardDate = document.createElement('h5');
   cardDate.className ="date"
-  cardDate.innerText = json.response.holidays[x].date;
+  cardDate.innerText = json.response.holidays[x].date.iso;
 
   let cardDesc = document.createElement('p');
   cardDesc.className = "desc"
