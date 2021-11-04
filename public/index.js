@@ -517,7 +517,7 @@ let displayData = (json) => {
   console.log(json.response.holidays[x].name);
 
   let card = document.createElement('div');
-  card.className = 'resultCard';
+  card.className = 'resultCard bounce-bottom';
 
   let img = document.createElement('img');
   img.className = 'card-img-top'
