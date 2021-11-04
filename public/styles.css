@@ -46,31 +46,26 @@ body {
     margin-top:2rem;
     margin-left:1rem;
     font-family: 'Mukta', sans-serif;
+    min-height: 90vh;
 }
 #results {
         margin-left: 1rem;
         margin-right: 1rem;
 }
 
-.footer {
-    height: 0.33rem;
-    background-image: url(./assets/HeaderBar.jpg);
-}
-
 .resultCard {
     height: auto;
-    width: 26rem;
+    width: 25%;
 }
 
 .card-img-top {
-    height: 10rem;
+    height: 5rem;
     width: 100%;
 }
 
-.info {
-    height: auto;
-    width: auto;
-    font-family: 'Mukta', sans-serif;
+.footer {
+    height: 0.33rem;
+    background-image: url(./assets/HeaderBar.jpg);
 }
 
 /* Animation Classes*/

@@ -36,31 +36,26 @@
         <!--Search Form w/in Main Body-->
         
           <!--Search Form-->
-            <form name = "search" onsubmit=fetchResults(e);>
+            <form name = "search" onsubmit=fetchResults(e);><center>
                 <select id = "select">
                   <option>--Select a Country -- </option> 
                 </select>
 
-                    <label for="year">Enter a SINGLE year (YYYY) before 2043:</label>
-                    <input type ="text" id = "year" class = "year" required>
+                    <label for="year"></label>
+                    <input type ="text" id = "year" class = "year" placeholder="Enter a SINGLE year before 2043:" required>
                     <button class="submit" type="submit">Submit</button>
                
                 <p><b>If there are no results displaying, the year/country combination did not provide any results.</b></p>
-            </form>
+            </center></form>
         
           <!--Returned Information-->
         <div class="col results" id="results">
-          <ul class="info">  Information about the website.
-          <li>All dates are in ISO format(YYYY/MM/DD)</li>
-          <li>Clicking Sumbit will continue to provide more holidays with the year and country chosen.</li>
-          </ul>
-
         </div>
       </div>
     </div>
     </div>
     <!--Footer-->
-   <footer class="footer"></footer>
+   <footer class="footer">Copyright 2021 Devon Silverfox-Patchett</footer>
   </body>
   <!--BootStrap-->
   <script
