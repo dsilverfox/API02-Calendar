@@ -29,28 +29,26 @@
   <body>
     
       <!--NAV/Header-->
-      <header class="header"><p>Happy Holidays</p></header>
+      <header class="header"></header>
       <div class="border"></div>
       <!--Main Body-->
-     <div class="container-fluid">
+    
       <div class="row">
         <!--Search Form w/in Main Body-->
-        <div class="col-3" id="searchForm">
+        
           <!--Search Form-->
             <form name = "search" onsubmit=fetchResults(e);>
                 <select id = "select">
                   <option>--Select a Country -- </option> 
                 </select>
-                <p>
+
                     <label for="year">Enter a SINGLE year (YYYY) before 2043:</label>
                     <input type ="text" id = "year" class = "year" required>
-                </p>
-                <p>
-                    <button class="submit" type="submit">Submit Search</button>
-                </p>
+                    <button class="submit" type="submit">Submit</button>
+               
                 <p><b>If there are no results displaying, the year/country combination did not provide any results.</b></p>
             </form>
-          </div>
+        
           <!--Returned Information-->
         <div class="col">
           <ul class="info">  Information about the website.
