@@ -554,4 +554,5 @@ let displayData = (json) => {
       card.appendChild(img);
       card.appendChild(cardBody);
       row.appendChild(card);
+      results.appendChild(row);
 }
