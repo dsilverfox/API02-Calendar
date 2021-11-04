@@ -509,15 +509,46 @@ async function fetchResults(e) {
 }; 
 
 //Data Display
+let row = document.querySelector(".row");
+console.log(row);
+
 let displayData = (json) => {
   let x = getRandomNumber(0, json.response.holidays.length - 1);
   console.log(json.response.holidays[x].name);
 
+  let card = document.createElement('div');
+  card.className = 'resultCard';
 
-//data display stuff goes here.
-//BUILD THE CARDS!
+  let img = document.createElement('img');
+  img.className = 'card-img-top'
+  img.src = "./assets/honey-yanibel-minaya-cruz-6gSyEKq4Pvg-unsplash - Copy.jpg";
+  
+  
+  let cardTitle = document.createElement('h1');
+  cardTitle.className = "title";
+  cardTitle.innerText = json.response.holidays[x].name;
+  
 
-//APPEND THE DATA
-{/* <section>.appendChild( name || description || date || type); */}
+  let cardDate = document.createElement('h5');
+  cardDate.className ="date"
+  cardDate.innerText = json.response.holidays[x].date;
 
+  let cardDesc = document.createElement('p');
+  cardDesc.className = "desc"
+  cardDesc.innerText = json.response.holidays[x].description;
+
+  let cardType = document.createElement('p');
+  cardType.className = "type"
+  cardType.innerText = json.response.holidays[x].type;
+
+  let cardBody = document.createElement('div');
+  cardBody.className = 'card-body'
+
+      cardBody.appendChild(title);
+      cardBody.appendChild(text);
+      cardBody.appendChild(date);
+      cardBody.appendChild(desc);
+      card.appendChild(img);
+      card.appendChild(cardBody);
+      row.appendChild(card);
 }
