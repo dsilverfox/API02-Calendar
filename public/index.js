@@ -519,7 +519,7 @@ let displayData = (json) => {
   let country = document.createElement('h5');
   country.className = 'country';
   country.innerText = `Country: ${select.value}`;
-  console.log(select.value);
+  country.style = "font-family: 'Mukta', sans-serif; font-size: 1rem";
     
   let card = document.createElement('div');
   card.className = 'resultCard bounce-bottom';
@@ -533,11 +533,22 @@ let displayData = (json) => {
   cardTitle.className = "title";
   cardTitle.innerText = json.response.holidays[x].name;
   cardTitle.style = "font-family: 'Eagle Lake', cursive;";
+
+  let title = json.response.holidays[x].name.split(" ");
+  console.log(title);
+
+  for (let i = 0; i < title.length; i++) {
+    if (title[i].length < 10) {
+      cardTitle.style.fontSize="1.5rem";
+    } else {
+      cardTitle.style.fontSize="1rem";
+    }
+  }
   
   let cardDate = document.createElement('h5');
   cardDate.className ="date"
   cardDate.innerText = json.response.holidays[x].date.iso;
-  cardDate.style = "font-family: 'Mukta', sans-serif;"
+  cardDate.style = "font-family: 'Mukta', sans-serif; font-size: 1rem"
 
   let cardDesc = document.createElement('p');
   cardDesc.className = "desc"
