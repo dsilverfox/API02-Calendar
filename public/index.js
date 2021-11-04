@@ -516,6 +516,11 @@ let displayData = (json) => {
   let x = getRandomNumber(0, json.response.holidays.length - 1);
   console.log(json.response.holidays[x].name);
 
+  let country = document.createElement('h5');
+  country.className = 'country';
+  country.innerText = `Country: ${select.value}`;
+  console.log(select.value);
+    
   let card = document.createElement('div');
   card.className = 'resultCard bounce-bottom';
 
@@ -548,6 +553,7 @@ let displayData = (json) => {
   cardBody.className = 'card-body'
 
       cardBody.appendChild(cardTitle);
+      cardBody.appendChild(country);
       cardBody.appendChild(cardDate);
       cardBody.appendChild(cardDesc);
       cardBody.appendChild(cardType);
